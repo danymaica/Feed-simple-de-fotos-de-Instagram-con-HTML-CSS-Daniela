@@ -1,0 +1,150 @@
+	 * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: #fafafa;
+      color: #262626;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Barra superior estilo Instagram */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      max-width: 600px;
+      background: white;
+      border-bottom: 1px solid #dbdbdb;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      z-index: 100;
+    }
+
+    header .logo {
+      font-family: 'Billabong', cursive;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      user-select: none;
+      cursor: default;
+    }
+
+    header .icons {
+      display: flex;
+      gap: 20px;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    /* Usamos emojis simples para íconos, sin importar JS ni SVG */
+    header .icons span:hover {
+      opacity: 0.7;
+    }
+
+    main {
+      margin-top: 70px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Card de cada post */
+    .post {
+      background: white;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    /* Cabecera del post con usuario */
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 12px 14px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 12px;
+      object-fit: cover;
+    }
+
+    .post-header .username {
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    /* Imagen del post */
+    .post-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    /* Barra de botones */
+    .post-actions {
+      display: flex;
+      align-items: center;
+      padding: 8px 14px;
+      font-size: 1.5rem;
+      gap: 14px;
+      user-select: none;
+    }
+
+    .post-actions span {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .post-actions span:hover {
+      transform: scale(1.2);
+    }
+
+    /* Texto debajo de acciones */
+    .post-likes {
+      padding: 0 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .post-caption {
+      padding: 0 14px 12px 14px;
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+
+    .post-caption .username {
+      font-weight: 600;
+      margin-right: 6px;
+      cursor: pointer;
+    }
+
+    /* Comentarios */
+    .post-comments {
+      padding: 0 14px 12px 14px;
+      font-size: 0.85rem;
+      color: #8e8e8e;
+      cursor: pointer;
+    }
+
+    /* Footer con fecha */
+    .post-date {
+      padding: 0 14px 12px 14px;
+      font-size: 0.75rem;
+      color: #c7c7c7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
